@@ -8,8 +8,8 @@ router.get('/', async (ctx, next) => {
     const str = db.findJson('nloves')
     // console.log('str', str)
     await ctx.render('index', {
-        title: 'Hello Koa 2!',
-        content: str ? JSON.stringify(str) : ''
+        // title: 'Hello Koa 2!',
+        // content: str ? JSON.stringify(str) : ''
     })
 })
 
